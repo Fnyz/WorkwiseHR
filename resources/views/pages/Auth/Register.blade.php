@@ -4,8 +4,12 @@
 @section('title', 'REGISTER')
 @section('content')
 <x-container>
-    {{-- @include("partials.__links") --}}
-    <div class="w-full h-dvh gap-5 flex justify-center items-center">
+
+   
+    @include("partials.__links")
+
+
+    <div class="w-full h-full  gap-10 flex justify-center items-center">
         <div class="card bg-base-100 shadow-xl w-[50%]">
             <div class="card-body">
               <h2 class="card-title text-[35px] font-bold">REGISTER</h2>
@@ -30,10 +34,8 @@
                         <span class="font-bold opacity-[0.7]">Confirm Password</span>
                         <input type="password" class="grow" value="password" />
                     </label>
-                    <div class="card-actions flex w-full items-center py-2 ">
-                        <p class="opacity-[0.7]">Already have an account? <a  href="{{route("pages.Auth.login")}}" class="font-bold cursor-pointer text-md active:text-red-500">Login here</a></p>
-                     </div>
-                     <div class=" w-full flex flex-col gap-3">
+                  
+                     <div class=" w-full flex flex-col gap-3 mt-4">
                        <button class="btn  w-full btn-active btn-accent text-white">REGISTER</button>
                      </div>
                    </div>
@@ -41,7 +43,7 @@
             
           </div>
           <svg width="700" height="700" >
-            <image href="/undraw_sign_up_n6im.svg" width="700" height="700" />
+            <image href="/undraw_login_re_4vu2.svg" width="700" height="700" />
           </svg>
     </div>
 

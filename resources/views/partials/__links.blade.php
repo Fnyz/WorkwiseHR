@@ -1,4 +1,19 @@
-<ul>
+
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">Workwise<p class="text-[#00b894]">/ HR</p></a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li><a href="{{route("pages.Auth.register")}}">Register</a></li>
+        <li><a href="{{route("pages.Auth.login")}}">Login</a></li>
+       
+      </ul>
+    </div>
+  </div>
+
+{{-- <ul>    
     @guest
        @php
            $res = explode(".", $routeName);
@@ -24,4 +39,4 @@
     </li>
     @endauth
   </li>
-</ul>
+</ul> --}}
